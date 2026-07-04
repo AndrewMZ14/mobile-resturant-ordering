@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    font-family: "Smythe", sans-serif ;
+}
+
+
+/* Header section */
+header{
+    height: 167px;
+    width: 600px;
+    background-image: url("images/burger.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 0;
+}
+
+.title, .motto{
+    color: #FFFFFF;
+    padding-left: 50px;
+}
+
+.motto{
+    font-size: 22.42px;
+    margin-top: 0;
+}
+
+.title{
+    margin-top:0;
+    padding-top:26px;
+    font-size:39px;
+    margin-bottom:0;
+}
+
+
+/* Menu items */
+.menu-items{
+    margin-top: 50px;
+}
+.menu-item{
+    padding-top: 20px;
+    padding-bottom: 20px ;
+    border-bottom: 1px solid #D2D2D2;
+    display: flex;
+    align-items: center;
+}
+.menu-item-icon{
+    font-size: 78px;
+    width:70px;
+    height:89px;
+    margin-right: 50px;
+}
+
+.menu-item-name{
+    line-height: 30px;
+    font-size: 28px;   
+}
+
+.menu-item-details{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    
+}
+
+.menu-item-description{
+    line-height: 30px;
+    font-size: 16px;
+    margin-left: px;
+}
+
+.price{
+    line-height: 30px;
+    font-size:20px;
+}
+
+.add-btn{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 1.5px solid #DEDEDE;
+    margin-left: auto;
+}
+.add-btn:hover{
+    background-color: red;
+}
+
+/* Order Section */
+.order-details{
+    margin-top: 35px;
+}
+.order-title{
+    text-align: center;
+    font-size: 28px;
+  
+}
+.order-summary{
+    border-bottom: 2px solid #393333;
+}
+
+.order-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.order-name{
+    font-size: 28px;
+    padding-right: 10px;
+}
+
+.remove-btn{
+    width: 77px;
+    height: 22px;
+    color:#BBBBBB;
+    border: none;
+}
+
+.sub-total{
+    margin-left: auto;
+}
+
+/* total section */
+.total-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 28px;
+}
+
+.complete-btn{
+    display: block;
+    width: 508px;
+    height: 60px;
+    background-color:#16DB99;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+}
+
+/* payment details */
+.payment-modal{
+    width: 524px;
+    height: 542.24px;
+    background-color: red;
+    text-align: center;
+}
+
+.payment-title{
+    padding-top: 40px;
+    font-size:24px;
+    font-weight:700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input{
+    display: block;
+    width: 475.91px;
+    height: 71.3px;
+    border: 1.3px solid 757575;
+    border-radius: 3.89px;
+}
+
+input::placeholder{
+    color:#757575;
+}
