@@ -139,6 +139,9 @@ if(Number(e.target.dataset.id) === 2){
     removeBtnLogic(beerCount, Number(e.target.dataset.id))
     beerCount = 0
 }
+if(e.target.id === 'complete-btn'){
+    paymentModal.style.display = 'block'
+}
 })
 
 
@@ -169,8 +172,7 @@ function removeBtnLogic(itemCount, idVal){
         orderDetailsDiv.removeChild(orderTitle)
         orderDetailsDiv.removeChild(completeBtn)
     }
-  
-
-    
     
 }
+
+
