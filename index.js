@@ -10,15 +10,13 @@ console.log(burgerCount)
 const paymentModal = document.getElementById('payment-modal')
 const paymentForm = document.getElementById('payment-form')
 
-
-
-
+//Handling payment modal form logic
 paymentForm.addEventListener('submit', (e) => {
         e.preventDefault()
         paymentModal.style.display = 'none'
         const formData = new FormData(paymentForm)
         const name = formData.get('name')
-        const thankYouMsg = `<p id="thank-you-msg" class="thank-you-msg">Thanks, ${name}!, Your order is on its way!</p>`
+        const thankYouMsg = `<div class="order-complete"><p id="thank-you-msg" class="thank-you-msg">Thanks, ${name}!, Your order is on its way!</p></div>`
         orderDetailsDiv.innerHTML = thankYouMsg
     })
 
@@ -58,7 +56,6 @@ function renderMenu(){
 
 //Render order summary section
 function renderOrderSummary(itemCount, idVal){
-        console.log('clicked')
         let { name, ingredients, id, price, emoji} = menuArray[idVal]
         
         
@@ -123,9 +120,8 @@ function renderOrderSummary(itemCount, idVal){
 
 }
 
-menuItemsDiv.innerHTML = renderMenu()
 
-//remove button code
+//remove button EventListener
 orderDetailsDiv.addEventListener('click', (e) => {
 if(Number(e.target.dataset.id) === 0){
     removeBtnLogic(pizzaCount, Number(e.target.dataset.id))
@@ -144,9 +140,8 @@ if(e.target.id === 'complete-btn'){
 }
 })
 
-
+//Remove button function
 function removeBtnLogic(itemCount, idVal){
-    console.log('hello')
     let{name, ingredients, price, emoji, id} = menuArray[idVal]
     price = price * itemCount
     totalAmount -= price
@@ -175,4 +170,4 @@ function removeBtnLogic(itemCount, idVal){
     
 }
 
-
+menuItemsDiv.innerHTML = renderMenu()
