@@ -10,6 +10,7 @@ body{
     display: flex;
     justify-content: center;
     font-family: "Smythe", sans-serif ;
+    position:relative;
 }
 
 
@@ -155,14 +156,25 @@ header{
 
 /* payment details */
 .payment-modal{
+    display: none;
     width: 524px;
     height: 542.24px;
-    background-color: red;
     text-align: center;
+    border: 1.3px solid #757575;
+    background-color: white;
+    position:fixed;
+    z-index: 2;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    box-shadow: 0 0 50px 20px black;
 }
 
 .payment-title{
     padding-top: 40px;
+    padding-bottom: 50px;
     font-size:24px;
     font-weight:700;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -174,8 +186,28 @@ input{
     height: 71.3px;
     border: 1.3px solid 757575;
     border-radius: 3.89px;
+    margin: 10px auto 30px auto;
+    font-size: 20px;
+ 
 }
 
 input::placeholder{
     color:#757575;
+    font-size: 20px;
+}
+
+.pay-btn{
+    display: block;
+    width: 475.91px;
+    height: 71.3px;
+    background-color:#16DB99;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FFFFFF;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
 }
