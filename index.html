@@ -26,9 +26,11 @@
             </div>
 
         </main>
-        <div class="payment-modal">
+
+        <div class="payment-modal" id="payment-modal">
             <p class="payment-title">Enter card details</p>
          
+            <form id="payment-form">
             <input class="payment-input"
                     name="name"
                     id="name"
@@ -36,18 +38,19 @@
                     >
 
             <input class="payment-input"
-                    name="name"
-                    id="name"
+                    name="card-number"
+                    id="card-number"
                     placeholder="Enter card number"
                     >
 
             <input class="payment-input"
-                    name="name"
-                    id="name"
+                    name="ccv"
+                    id="ccv"
                     placeholder="Enter CVV"
                     >
 
             <button type="submit" class="pay-btn">Pay</button>
+            </form>
         </div>
         
     </div>

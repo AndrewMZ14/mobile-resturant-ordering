@@ -7,6 +7,21 @@ let beerCount = 0
 let totalAmount = 0
 console.log(burgerCount)
 
+const paymentModal = document.getElementById('payment-modal')
+const paymentForm = document.getElementById('payment-form')
+
+
+
+
+paymentForm.addEventListener('submit', (e) => {
+        e.preventDefault()
+        paymentModal.style.display = 'none'
+        const formData = new FormData(paymentForm)
+        const name = formData.get('name')
+        const thankYouMsg = `<p id="thank-you-msg" class="thank-you-msg">Thanks, ${name}!, Your order is on its way!</p>`
+        orderDetailsDiv.innerHTML = thankYouMsg
+    })
+
 //checking which button was clicked on the menu items
 menuItemsDiv.addEventListener("click", (e) => {
     if(Number(e.target.dataset.id) === 0){
@@ -155,5 +170,7 @@ function removeBtnLogic(itemCount, idVal){
         orderDetailsDiv.removeChild(completeBtn)
     }
   
+
+    
     
 }

@@ -156,7 +156,7 @@ header{
 
 /* payment details */
 .payment-modal{
-    display: none;
+    
     width: 524px;
     height: 542.24px;
     text-align: center;
